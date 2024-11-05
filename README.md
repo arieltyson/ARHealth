@@ -43,6 +43,7 @@ This project leverages the powerful combination of Swift and SwiftUI, along with
 - [x] HealthKit
 - [x] RealityKit
 - [x] Messages
+- [x] Swift Testing
 
 ## Skills Demonstrated 🥋
 
