@@ -35,7 +35,6 @@ This project leverages the powerful combination of Swift and SwiftUI, along with
 - [x] Swift
 - [x] ARKit
 - [x] SiriKit
-- [x] Intents
 - [x] WebKit
 - [x] SwiftUI
 - [x] Combine
@@ -43,6 +42,7 @@ This project leverages the powerful combination of Swift and SwiftUI, along with
 - [x] HealthKit
 - [x] RealityKit
 - [x] Messages
+- [x] App Intents
 - [x] Swift Testing
 
 ## Skills Demonstrated 🥋
