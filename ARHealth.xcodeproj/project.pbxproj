@@ -40,7 +40,6 @@
 		AFA85DD42CD9FCCC00BB1A90 /* Exceptions for "ARHealth" folder in "ARHealth" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Additional/.gitignore,
 				Info.plist,
 			);
 			target = AFA85DAE2CD9FCC900BB1A90 /* ARHealth */;
