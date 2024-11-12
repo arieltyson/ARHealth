@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF88F7CA2CE1D6190095F21B /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF88F7C92CE1D6190095F21B /* MessageUI.framework */; };
+		AF88F7E22CE1E4260095F21B /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF88F7E12CE1E4260095F21B /* ARKit.framework */; };
+		AF88F7E42CE1E42F0095F21B /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF88F7E32CE1E42F0095F21B /* Vision.framework */; };
+		AF88F7E62CE1E4380095F21B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF88F7E52CE1E4380095F21B /* WebKit.framework */; };
+		AF88F7E82CE1E4420095F21B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF88F7E72CE1E4420095F21B /* HealthKit.framework */; };
 		AFA85DB52CD9FCC900BB1A90 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = AFA85DB42CD9FCC900BB1A90 /* RealityKitContent */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF88F7C92CE1D6190095F21B /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		AF88F7E12CE1E4260095F21B /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		AF88F7E32CE1E42F0095F21B /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		AF88F7E52CE1E4380095F21B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AF88F7E72CE1E4420095F21B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		AFA85DAF2CD9FCC900BB1A90 /* ARHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA85DB32CD9FCC900BB1A90 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		AFA85DCE2CD9FCCC00BB1A90 /* ARHealthTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARHealthTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,7 +40,7 @@
 		AFA85DD42CD9FCCC00BB1A90 /* Exceptions for "ARHealth" folder in "ARHealth" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				.gitignore,
+				Additional/.gitignore,
 				Info.plist,
 			);
 			target = AFA85DAE2CD9FCC900BB1A90 /* ARHealth */;
@@ -58,6 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF88F7E62CE1E4380095F21B /* WebKit.framework in Frameworks */,
+				AF88F7E42CE1E42F0095F21B /* Vision.framework in Frameworks */,
+				AF88F7E22CE1E4260095F21B /* ARKit.framework in Frameworks */,
+				AF88F7E82CE1E4420095F21B /* HealthKit.framework in Frameworks */,
+				AF88F7CA2CE1D6190095F21B /* MessageUI.framework in Frameworks */,
 				AFA85DB52CD9FCC900BB1A90 /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,12 +87,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF88F7C82CE1D6190095F21B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF88F7E72CE1E4420095F21B /* HealthKit.framework */,
+				AF88F7E52CE1E4380095F21B /* WebKit.framework */,
+				AF88F7E32CE1E42F0095F21B /* Vision.framework */,
+				AF88F7E12CE1E4260095F21B /* ARKit.framework */,
+				AF88F7C92CE1D6190095F21B /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFA85DA62CD9FCC900BB1A90 = {
 			isa = PBXGroup;
 			children = (
 				AFA85DB12CD9FCC900BB1A90 /* ARHealth */,
 				AFA85DB22CD9FCC900BB1A90 /* Packages */,
 				AFA85DD12CD9FCCC00BB1A90 /* ARHealthTests */,
+				AF88F7C82CE1D6190095F21B /* Frameworks */,
 				AFA85DB02CD9FCC900BB1A90 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -237,7 +265,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARHealth/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ARHealth/Additional/Preview Content\"";
 				DEVELOPMENT_TEAM = 2MPMKAF986;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -263,7 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ARHealth/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ARHealth/Additional/Preview Content\"";
 				DEVELOPMENT_TEAM = 2MPMKAF986;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

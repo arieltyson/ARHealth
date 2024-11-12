@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "ARHealthLogo.png",
       "idiom" : "vision",
       "scale" : "2x"
     }
